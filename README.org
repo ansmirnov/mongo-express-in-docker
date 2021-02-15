@@ -11,6 +11,7 @@
   - [[#run-mongo-express][Run mongo-express]]
   - [[#use-mongo-express][Use mongo-express]]
   - [[#see-the-container-logs][See the container logs]]
+  - [[#kill-the-container][Kill the container]]
   - [[#references][References]]
 
 ** Select the version of the docker image
@@ -77,6 +78,12 @@ Open the URL in a browser: http://$INTERFACE:8081/.
 
 #+BEGIN_SRC sh
 docker logs $NAME
+#+END_SRC
+
+** Kill the container
+
+#+BEGIN_SRC sh
+docker kill $NAME
 #+END_SRC
 
 ** References

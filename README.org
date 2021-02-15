@@ -12,6 +12,12 @@ IMAGE=mongo-express
 TAG=0.54.0
 #+END_SRC
 
+** Set container name
+
+#+BEGIN_SRC sh
+NAME=mongo-express
+#+END_SRC
+
 ** References
 
 1. https://hub.docker.com/_/mongo-express/

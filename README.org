@@ -1,1 +1,2 @@
 #+TITLE: Running Mongo-express in docker
+#+PROPERTY: header-args :session *shell docker* :results silent raw

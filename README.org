@@ -9,6 +9,7 @@
   - [[#set-the-mongodb-container-name][Set the MongoDB container name]]
   - [[#set-the-network-parameters][Set the network parameters]]
   - [[#run-mongo-express][Run mongo-express]]
+  - [[#use-mongo-express][Use mongo-express]]
   - [[#references][References]]
 
 ** Select the version of the docker image
@@ -66,6 +67,10 @@ docker run -it --rm -d \
     --link $MONGODB_CONTAINER \
     mongo-express
 #+END_SRC
+
+** Use mongo-express
+
+Open the URL in a browser: http://$INTERFACE:8081/.
 
 ** References
 

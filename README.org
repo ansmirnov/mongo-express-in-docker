@@ -7,6 +7,7 @@
   - [[#pull-the-docker-image][Pull the docker image]]
   - [[#configure-the-mongo-express-instance][Configure the mongo-express instance]]
   - [[#set-the-mongodb-container-name][Set the MongoDB container name]]
+  - [[#set-the-network-parameters][Set the network parameters]]
   - [[#references][References]]
 
 ** Select the version of the docker image
@@ -45,6 +46,13 @@ ME_CONFIG_MONGODB_PORT=27017
 
 #+BEGIN_SRC sh
 MONGODB_CONTAINER=mongodb
+#+END_SRC
+
+** Set the network parameters
+
+#+BEGIN_SRC sh
+INTERFACE=0.0.0.0
+PORT=8081
 #+END_SRC
 
 ** References

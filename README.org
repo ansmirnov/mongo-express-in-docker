@@ -8,6 +8,7 @@
   - [[#configure-the-mongo-express-instance][Configure the mongo-express instance]]
   - [[#set-the-mongodb-container-name][Set the MongoDB container name]]
   - [[#set-the-network-parameters][Set the network parameters]]
+  - [[#run-mongo-express][Run mongo-express]]
   - [[#references][References]]
 
 ** Select the version of the docker image
@@ -53,6 +54,17 @@ MONGODB_CONTAINER=mongodb
 #+BEGIN_SRC sh
 INTERFACE=0.0.0.0
 PORT=8081
+#+END_SRC
+
+** Run mongo-express
+
+#+BEGIN_SRC sh
+docker run -it --rm -d \
+    --name $NAME \
+    -p $INTERFACE:$PORT:8081 \
+    --env-file .env \
+    --link $MONGODB_CONTAINER \
+    mongo-express
 #+END_SRC
 
 ** References

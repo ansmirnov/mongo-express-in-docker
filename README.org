@@ -2,7 +2,15 @@
 #+PROPERTY: header-args :session *shell docker* :results silent raw
 
 ** Contents                                                           :TOC_3:
+  - [[#select-the-version-of-the-docker-image][Select the version of the docker image]]
   - [[#references][References]]
+
+** Select the version of the docker image
+
+#+BEGIN_SRC sh
+IMAGE=mongo-express
+TAG=0.54.0
+#+END_SRC
 
 ** References
 

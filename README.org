@@ -6,6 +6,7 @@
   - [[#set-container-name][Set container name]]
   - [[#pull-the-docker-image][Pull the docker image]]
   - [[#configure-the-mongo-express-instance][Configure the mongo-express instance]]
+  - [[#set-the-mongodb-container-name][Set the MongoDB container name]]
   - [[#references][References]]
 
 ** Select the version of the docker image
@@ -38,6 +39,12 @@ ME_CONFIG_MONGODB_ADMINUSERNAME=user
 ME_CONFIG_MONGODB_ADMINPASSWORD=topsecret
 ME_CONFIG_MONGODB_SERVER=mongodb
 ME_CONFIG_MONGODB_PORT=27017
+#+END_SRC
+
+** Set the MongoDB container name
+
+#+BEGIN_SRC sh
+MONGODB_CONTAINER=mongodb
 #+END_SRC
 
 ** References
